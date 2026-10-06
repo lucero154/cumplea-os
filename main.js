@@ -14,7 +14,7 @@ const birthdayConfig = {
   title: 'Feliz Cumpleaños',
   message: 'Hoy quiero celebrar tu vida, tus momentos, tus logros y todos los recuerdos bonitos que hemos compartido juntos, te amo y siempre te amare mi vida.',
 
-  background: 'assets/images/background.jpg',
+  background: 'background.jpg',
 
   showGallery: true,
   showVideos: true,
@@ -23,25 +23,25 @@ const birthdayConfig = {
 
   // Fotos: archivos dentro de assets/images/  (puedes agregar o quitar líneas)
   photos: [
-    { file: 'assets/images/foto1.jpg', caption: 'Tu primera nevada en el trabajo ✨' },
-    { file: 'assets/images/foto2.jpg', caption: 'Me tienes lokita por ti ❤️' },
-    { file: 'assets/images/foto3.jpg', caption: 'Gracias por cada momento juntos' },
-    { file: 'assets/images/foto4.jpg', caption: 'Mi INGENIERO 💖' },
-    { file: 'assets/images/foto5.jpg', caption: 'Contigo todo es mejor 🤍' }
+    { file: 'foto1.jpg', caption: 'Tu primera nevada en el trabajo ✨' },
+    { file: 'foto2.jpg', caption: 'Me tienes lokita por ti ❤️' },
+    { file: 'foto3.jpg', caption: 'Gracias por cada momento juntos' },
+    { file: 'foto4.jpg', caption: 'Mi INGENIERO 💖' },
+    { file: 'foto5.jpg', caption: 'Contigo todo es mejor 🤍' }
   ],
 
   // Videos: archivos dentro de assets/videos/
   videos: [
-    { file: 'assets/videos/video1.mp4', caption: 'Cuando me emocione por el gol que hiciste mi amor ⚽' },
-    { file: 'assets/videos/video2.mp4', caption: 'Lo guapo que estas papasito 😉' }
+    { file: 'video1.mp4', caption: 'Cuando me emocione por el gol que hiciste mi amor ⚽' },
+    { file: 'video2.mp4', caption: 'Lo guapo que estas papasito 😉' }
   ],
 
-  // GIFs: archivos dentro de assets/gifs/ (vacío por ahora; agrega rutas como 'assets/gifs/gif1.gif')
+  // GIFs: archivos dentro de assets/gifs/ (vacío por ahora; agrega rutas como 'gif1.gif')
   gifs: [],
 
   // Canciones: archivos dentro de assets/music/ y portadas en assets/images/
   playlist: [
-    { title: 'Golden Hour', artist: 'JVKE', file: 'assets/music/cancion1.mp3', cover: 'assets/images/foto1.jpg' }
+    { title: 'Golden Hour', artist: 'JVKE', file: 'cancion1.mp3', cover: 'foto1.jpg' }
   ]
 };
 /* ===================================================================== */
