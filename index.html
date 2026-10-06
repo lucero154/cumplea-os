@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07050f">
+  <title>Feliz Cumpleaños ❤️</title>
+
+  <!-- Tipografías (si no hay internet, el navegador usa las de respaldo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js por CDN (módulo ES). Explicación en el README. -->
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <!-- Foto de fondo + capa oscura -->
+  <div id="bg"></div>
+  <div id="bg-overlay"></div>
+
+  <!-- Escena 3D -->
+  <canvas id="c"></canvas>
+
+  <!-- GIFs flotantes (se posicionan en 3D desde gallery.js) -->
+  <div id="gif-layer"></div>
+
+  <!-- Título y mensaje -->
+  <div id="hud" class="hidden">
+    <h1 id="title"></h1>
+    <p id="message"></p>
+  </div>
+
+  <!-- Botón de deseo -->
+  <div id="bottom-ui" class="hidden">
+    <button id="wish-btn" class="btn">✨ Pedir un deseo</button>
+    <p id="hint">Toca las velas para apagarlas · toca un recuerdo para verlo de cerca · arrastra para girar</p>
+  </div>
+
+  <!-- Texto central del deseo -->
+  <div id="wish-text"></div>
+
+  <!-- Barra al ver una foto o video de cerca -->
+  <div id="media-bar" class="hidden">
+    <p id="media-caption"></p>
+    <div class="media-actions">
+      <button id="media-play" class="btn small">⏸ Pausar</button>
+      <button id="media-close" class="btn small ghost">✕ Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Reproductor de música -->
+  <div id="player" class="hidden"></div>
+
+  <!-- Introducción cinematográfica -->
+  <div id="intro">
+    <div class="orb"></div>
+    <div class="intro-lines">
+      <p class="line" id="l1">Hay algo preparado para ti...</p>
+      <p class="line" id="l2">✨ Una pequeña sorpresa ✨</p>
+      <p class="line big" id="l3">Entra...</p>
+    </div>
+    <button id="enter-btn" class="btn">Entrar a la sorpresa ❤️</button>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
